@@ -1,4 +1,4 @@
-##Lab 1: Consuming an API created by a different team in your company
+## Lab 1: Consuming an API created by a different team in your company
 
 #### Duration
 
