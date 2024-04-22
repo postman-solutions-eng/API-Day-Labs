@@ -1,0 +1,77 @@
+openapi: 3.0.0
+info:
+  title: Product Recommendations API
+  version: 1.0.0
+  description: An API for retrieving product recommendations
+
+servers:
+  - url: https://{{baseUrl}}
+
+paths:
+  /v1/recommendations:
+    get:
+      summary: Get product recommendations
+      parameters:
+        - name: customerId
+          in: query
+          required: true
+          description: The ID of the customer
+          example: 1002
+          schema:
+            type: string
+        - name: limit
+          in: query
+          required: false
+          description: The maximum number of recommendations to return (default 10)
+          schema:
+            type: integer
+            default: 10
+            minimum: 1
+            maximum: 100
+      responses:
+        '200':
+          description: A list of product recommendations
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Product'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              example:
+                message: Customer ID is required
+        '404':
+          description: Not found
+          content:
+            application/json:
+              example:
+                message: No recommendations found for the customer
+
+components:
+  schemas:
+    Product:
+      type: object
+      properties:
+        id:
+          type: string
+          description: The ID of the product
+        name:
+          type: string
+          description: The name of the product
+        description:
+          type: string
+          description: The description of the product
+        userRating:
+          type: number
+          format: float
+          minimum: 0
+          maximum: 5
+          description: The average user rating of the product
+        topReviews:
+          type: array
+          items:
+            type: string
+          description: The top reviews of the product
