@@ -30,7 +30,7 @@ Since we are taking over development of the Recommendation API, we need to impor
 ##### Step 1 - Obtain the Spec file from the outside contractors
 
 - Download this [Open API Specification file](https://drive.google.com/file/d/1x9Qm8-19ZdSUJuLApsJnFA-KRnnE4Z1h/view?usp=drive_link) to your local workstation.
-- If you have difficulties downloading the file, the contents of the file can be found in the [Appendix](https://docs.google.com/document/d/1uMkuwgNnMBznZ0Y5Pfko-XXEwBlruXXZZT7Z6lscxeo/edit#heading=h.ofpmdo9jv93l). Simply save the contents to a local recommendations-v1.yaml file.
+- If you have difficulties downloading the file, the contents of the file can be found in this [github repo](https://raw.githubusercontent.com/postman-solutions-eng/API-Day-Labs/main/Lab%203/recommendations-v1.yaml)
     
 
 ##### Step 2 - Import the Spec
