@@ -17,7 +17,9 @@ To expedite this process, you'll prototype the API within Postman, allowing for 
 In essence, these exercises encapsulate a holistic approach to software development, seamlessly integrating prototyping, testing, and collaboration to drive innovation and excellence in product delivery.
 
 Let’s review your user story
+**<u>As an</u> AI Service Subscriber
+<u>I want to</u> see new AI features such as better Descriptions and Sentiment Analysis when I get Product Recommendations
+<u>So that</u> I can better cross sell from my existing product catalog**
 
-**As an AI Service Subscriber
-I want to see new AI features such as better Descriptions and Sentiment Analysis when I get Product Recommendations
-So that I can better cross sell from my existing product catalog**
+With the understanding in place about what we are trying to accomplish, let’s begin the first Lab.
+
