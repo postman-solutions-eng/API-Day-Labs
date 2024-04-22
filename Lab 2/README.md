@@ -1,5 +1,3 @@
-## Lab 2: Validate Behavior
-
 #### Duration
 
 30 mins
@@ -38,7 +36,7 @@ Let’s make sure we pull down those changes that the other dev team worked on
 - Click on three dots next to the Subscription Service - API documentation collection name and select Pull Changes.
     
 
-<img src="https://lh7-us.googleusercontent.com/49UR_j_GOSYPY5P_QQVBL06GQvkjM3-iBMRXz0ATp1600ZEtopR7scxXT1NfnSQvS9GaK5zsn0G-nlnDyAoqtRU1AY4wXT-4YdlaqteMq3zxp2xcOQEuk1J4YKFJxuZEfMEd7mLano54BBwutqX_dMg">
+<img src="https://lh7-us.googleusercontent.com/49UR_j_GOSYPY5P_QQVBL06GQvkjM3-iBMRXz0ATp1600ZEtopR7scxXT1NfnSQvS9GaK5zsn0G-nlnDyAoqtRU1AY4wXT-4YdlaqteMq3zxp2xcOQEuk1J4YKFJxuZEfMEd7mLano54BBwutqX_dMg" width="376" height="587">
 
 - Review the changes in the change log and you will see that 2 of the examples have been changed. The other dev team added the example you requested, plus they updated the return for list all subscriptions to include the content for customer 1003.
 - Once you are done reviewing, go ahead and click Pull Changes and review that your forked collection has been updated appropriately
@@ -74,7 +72,7 @@ pm.request.addQueryParams("customerId=1003")
 - Our first test will ensure we receive a 200 status on the endpoint. Since this is a common test, we can search the tests snippets on the right and click on it to add it to our tests.
     
 
-<img src="https://lh7-us.googleusercontent.com/CM5Vkreyb0DxPZRps79dtOW5NGcr6euA8NqcTLnMhfAx6PzMkF5z3HvkY4n3iUr6-yc2-LeE-vDtg55HqPd3DYadzbFYjef33CsqRGLmG4J4l7lJQ0br96AeEluEVc7R9OKseh-O6o_LcyQOmpLWuSk">
+<img src="https://lh7-us.googleusercontent.com/CM5Vkreyb0DxPZRps79dtOW5NGcr6euA8NqcTLnMhfAx6PzMkF5z3HvkY4n3iUr6-yc2-LeE-vDtg55HqPd3DYadzbFYjef33CsqRGLmG4J4l7lJQ0br96AeEluEVc7R9OKseh-O6o_LcyQOmpLWuSk" width="472" height="287">
 
 - Let’s add another test to make sure that we get at least two plans that this customer subscribed to. Please add the following in addition to the 200 test:
     
@@ -90,7 +88,7 @@ pm.test("Expected number of plans", function () {
 - As you are adding these tests, feel free to hit the Send button and click on the Test Results tab in the header of the response pane to see the results of the test runs:
     
 
-<img src="https://lh7-us.googleusercontent.com/cHHTu9RXDlrLEc2ciB-FDNGG60lYwisnWf8hLwfRkuhcpicurta_U8joArD6_pi2FRp3-6O_IDaflo8DfVdWybfriDZMWfDk3mjjBssp6a_1mZ2Hakvyo0tDVVQ7IFap-i7yin86J1gRwMpEVXJpgjY">
+<img src="https://lh7-us.googleusercontent.com/cHHTu9RXDlrLEc2ciB-FDNGG60lYwisnWf8hLwfRkuhcpicurta_U8joArD6_pi2FRp3-6O_IDaflo8DfVdWybfriDZMWfDk3mjjBssp6a_1mZ2Hakvyo0tDVVQ7IFap-i7yin86J1gRwMpEVXJpgjY" width="504" height="654">
 
 - So far we have written some simple tests. Now let's take it a step further and write a Postman test to verify that within the response JSON array, at least one object has a "plan" value of "ADW-MSTS-ADV-AI-SERVICES" with a "status" of "active":
     
@@ -131,7 +129,7 @@ Next, we’ll create a Monitor so that we can be notified if the dev API breaks
 - Click on three dots next to the Subscription Service - API documentation collection name and select Monitor Collection:
     
 
-<img src="https://lh7-us.googleusercontent.com/KDpDyq-wdf7ph5bAQ4ht7UIiljeo_UBAyzZY19uOvkAcIwUP_nJoR6NXeLH70ealoOS43SHZ4gNXRT4LE3S3i3yxtwMHI5zDy2CkpHCksZOWlYLkemJsK8JBz4Z6TR6BlVOdBj07qtUT072OXg7y6hE">
+<img src="https://lh7-us.googleusercontent.com/KDpDyq-wdf7ph5bAQ4ht7UIiljeo_UBAyzZY19uOvkAcIwUP_nJoR6NXeLH70ealoOS43SHZ4gNXRT4LE3S3i3yxtwMHI5zDy2CkpHCksZOWlYLkemJsK8JBz4Z6TR6BlVOdBj07qtUT072OXg7y6hE" width="484" height="794">
 
 - Click on three dots … next to the collection name and select “Monitor collection”
 - Fill out the information to stand up your new monitor
@@ -143,7 +141,7 @@ Next, we’ll create a Monitor so that we can be notified if the dev API breaks
 - Postman will navigate you to the monitor’s view and will inform you that the monitor has not been run yet:
     
 
-<img src="https://lh7-us.googleusercontent.com/BODj1d3APVkxDZNb6Qjl2u0RrqkIVonMgK5tJz6052I9qeIhsg0MX1WDYA1tcn7PizfPw4YsnJRsLCl2ME8AqbHhRPXPi-auVWNbCrvsVOUIeXcPiBS7lDRtnTgADKKp6KghEMyRmlDsLafex6rTG4c">
+<img src="https://lh7-us.googleusercontent.com/BODj1d3APVkxDZNb6Qjl2u0RrqkIVonMgK5tJz6052I9qeIhsg0MX1WDYA1tcn7PizfPw4YsnJRsLCl2ME8AqbHhRPXPi-auVWNbCrvsVOUIeXcPiBS7lDRtnTgADKKp6KghEMyRmlDsLafex6rTG4c" width="486" height="356">
 
 - Go ahead and click on Run to see the output of your tests. This monitor will continue to run at the frequency you selected and inform you if any tests fail.
     
