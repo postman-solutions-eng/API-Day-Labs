@@ -62,7 +62,7 @@ Since we depend on this service, let us make sure that we are writing some tests
     
 
 ``` javascript
-pm.request.addQueryParams("customerId=1002")
+pm.request.addQueryParams("customerId=1003")
 
  ```
 
