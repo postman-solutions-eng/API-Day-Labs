@@ -1,5 +1,3 @@
-## Lab 5: Testing user stories and workflows across multiple APIs
-
 #### Duration
 
 40 mins
@@ -31,9 +29,9 @@ With this lab, we will focus on:
 
 ##### Step 2 - Duplicate requests
 
-- Step 2: Duplicate the request “Get all subscriptions”
-- Step 3: Move the copy into the the new collection you created
-- Step 4: Duplicate the request “Get product recommendations” and move that to the new collection
+- Step 2: Duplicate the request “Get all subscriptions” from the collection “Subscriptions Service - API Documentation” (you can click on the three dots next to the request name to find the option to duplicate the request)
+- Step 3: Move the copy into the the new collection you created (drag and drop)
+- Step 4: Duplicate the request “Get product recommendations” from the collection “-Product Recommendations API” and move that to the new collection
     
 
 ###### Update Requests
